@@ -1,0 +1,68 @@
+@startuml
+top to bottom direction
+
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #F0F4FF
+  BorderColor #3A7BD5
+  FontSize 13
+}
+skinparam ArrowColor #555555
+skinparam ArrowFontSize 11
+
+title BlassaCar — Diagramme de Cas d'Utilisation
+
+actor Conducteur as C #lightblue
+actor Voyageur   as V #lightgreen
+actor Admin      as A #lightyellow
+
+package "Authentification" {
+  usecase "S'inscrire" as UC1
+  usecase "Se connecter" as UC2
+}
+
+package "Gestion des Trajets (Conducteur)" {
+  usecase "Publier un trajet" as UC3
+  usecase "Modifier un trajet" as UC4
+  usecase "Annuler un trajet" as UC5
+}
+
+package "Réservation (Voyageur)" {
+  usecase "Rechercher un trajet" as UC6
+  usecase "Réserver une place" as UC7
+  usecase "Annuler une réservation" as UC8
+  usecase "Laisser un avis" as UC9
+}
+
+package "Notifications" {
+  usecase "Recevoir une notification WhatsApp" as UC10
+}
+
+package "Administration" {
+  usecase "Gérer les utilisateurs" as UC11
+  usecase "Modérer les trajets" as UC12
+  usecase "Consulter les statistiques" as UC13
+}
+
+C --> UC1
+C --> UC2
+C --> UC3
+C --> UC4
+C --> UC5
+
+V --> UC1
+V --> UC2
+V --> UC6
+V --> UC7
+V --> UC8
+V --> UC9
+
+A --> UC11
+A --> UC12
+A --> UC13
+
+UC7 ..> UC10 : <<include>>
+UC3 ..> UC10 : <<include>>
+UC8 ..> UC10 : <<include>>
+UC9 ..> UC7 : <<extend>>
+@enduml

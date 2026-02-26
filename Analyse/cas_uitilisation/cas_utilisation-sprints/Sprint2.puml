@@ -1,0 +1,38 @@
+@startuml Sprint2
+
+left to right direction
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #EEFFF4
+  BorderColor #2ECC71
+}
+
+title BlassaCar - Sprint 2 : Ameliorations
+
+actor Conducteur as C
+actor Voyageur as V
+actor Admin as A
+
+rectangle "Sprint 2 - Ameliorations" {
+  usecase "Modifier un trajet" as UC4
+  usecase "Annuler un trajet" as UC5
+  usecase "Annuler une reservation" as UC8
+  usecase "Laisser un avis" as UC9
+  usecase "Gerer les utilisateurs" as UC11
+  usecase "Moderer les trajets" as UC12
+  usecase "Statistiques" as UC13
+}
+
+C --> UC4
+C --> UC5
+
+V --> UC8
+V --> UC9
+
+A --> UC11
+A --> UC12
+A --> UC13
+
+UC9 ..> UC8 : <<extend>>
+
+@enduml
