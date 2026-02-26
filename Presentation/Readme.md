@@ -104,7 +104,7 @@ style: |
 </div>
 
 # **Projet de Fin de Formation**
-### Système de QCM Interactif
+### BlassaCar — Plateforme de covoiturage entre les villes du Maroc
 
 **Réalisé par :** <span class="highlight">Ayoub Jalyta</span>  
 **Encadré par :** <span class="highlight">M. ESSARRAJ Fouad</span>  
