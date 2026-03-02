@@ -61,6 +61,15 @@ style: |
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
+  .img-sprint {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    max-width: 95%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
 
   .dt-card {
     background: #f0f7fa;
@@ -219,7 +228,23 @@ style: |
 
 <div class="img-container">
   <h3>Interaction Utilisateur (UML)</h3>
-  <img src="images/usecaseGlobale.png" class="img-methodo" style="width: 100%; max-height: 750px;" alt="Use Case">
+  <img src="images/useCaseGlobalee.png" class="img-methodo" style="width: 100%; max-height: 750px;" alt="Use Case">
+</div>
+
+---
+
+## Branche Fonctionnelle : Sprint 1 (MVP)
+
+<div class="img-container" style="height: auto;">
+  <img src="images/sprint1.png" class="img-sprint" alt="Sprint 1">
+</div>
+
+---
+
+## Branche Fonctionnelle : Sprint 2
+
+<div class="img-container" style="height: auto;">
+  <img src="images/Sprint2.png" class="img-sprint" alt="Sprint 2">
 </div>
 
 ---

@@ -1,38 +1,50 @@
 @startuml Sprint1
-
 left to right direction
+
 skinparam actorStyle awesome
 skinparam usecase {
   BackgroundColor #EEF4FF
   BorderColor #3A7BD5
+  FontSize 13
 }
+skinparam ArrowColor #555555
+skinparam ArrowFontSize 11
+skinparam linetype ortho
 
-title BlassaCar - Sprint 1 : MVP
+title BlassaCar - Sprint 1 : MVP (Mobile + Web)
 
-actor Conducteur as C
-actor Voyageur as V
+actor Driver   as C #lightblue
+actor Traveler as V #lightgreen
 
 rectangle "Sprint 1 - MVP" {
-  usecase "S'inscrire" as UC1
-  usecase "Se connecter" as UC2
-  usecase "Publier un trajet" as UC3
-  usecase "Rechercher un trajet" as UC6
-  usecase "Reserver une place" as UC7
-  usecase "Notification WhatsApp" as UC10
+  usecase "Register" as UC1
+  usecase "Login" as UC2
+
+  usecase "Post a Ride" as UC3
+
+  usecase "Search for a Ride" as UC6
+  usecase "Book a Seat" as UC7
+
+  usecase "Send WhatsApp\nNotification (Driver)" as UC10
+  usecase "Send WhatsApp\nNotification (Traveler)" as UC11
 }
 
 C --> UC1
 C --> UC2
 C --> UC3
-C --> UC10
 
 V --> UC1
 V --> UC2
 V --> UC6
 V --> UC7
-V --> UC10
 
+UC7 ..> UC6  : <<include>>
 UC7 ..> UC10 : <<include>>
-UC3 ..> UC10 : <<include>>
+UC7 ..> UC11 : <<include>>
+
+note right of UC11
+In MVP: booking request received
+(not necessarily confirmed)
+end note
 
 @enduml
