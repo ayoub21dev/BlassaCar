@@ -72,7 +72,6 @@ style: |
     width: 100%;
   }
 
-  /* --- FIX COULEURS TECH STACK --- */
   .tech-container {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +82,7 @@ style: |
     padding: 8px 18px;
     border-radius: 6px;
     font-weight: 600;
-    background-color: #545353ff; /* Gris foncé unique */
+    background-color: #545353ff;
     color: #ffffff !important;
     font-size: 0.85em;
     border: 1px solid #222;
@@ -120,12 +119,24 @@ style: |
   <div class="sommaire-item"><div class="sommaire-num">3</div><div class="sommaire-text">Branche Fonctionnelle</div></div>
   <div class="sommaire-item"><div class="sommaire-num">4</div><div class="sommaire-text">Branche Technique</div></div>
   <div class="sommaire-item"><div class="sommaire-num">5</div><div class="sommaire-text">Conception</div></div>
-    <div class="sommaire-item"><div class="sommaire-num">6</div><div class="sommaire-text">Démonstration</div></div>
+  <div class="sommaire-item"><div class="sommaire-num">6</div><div class="sommaire-text">Démonstration</div></div>
   <div class="sommaire-item"><div class="sommaire-num">7</div><div class="sommaire-text">Conclusion</div></div>
 </div>
 
 ---
+
 ## 1. Contexte du projet
+
+<div class="dt-card">
+  <h4>Problème identifié</h4>
+  <p>Au Maroc, des milliers de personnes cherchent quotidiennement des trajets partagés entre les villes (Rabat, Casablanca, Marrakech, Fès...). Aujourd'hui, cette recherche se fait <strong>via des groupes Facebook et WhatsApp</strong>, sans aucune organisation, vérification ou sécurité.</p>
+  <br>
+  <h4>Solution proposée</h4>
+  <p><strong>BlassaCar</strong> est une plateforme web de covoiturage 100% marocaine qui centralise la publication, la recherche et la réservation de trajets inter-villes, avec un système de vérification des profils et de notation pour instaurer la confiance.</p>
+  <br>
+  <h4>Inspiration</h4>
+  <p>Inspirée de BlaBlaCar, mais adaptée au marché marocain : paiement local (CMI, CashPlus), interface en Darija/Français, et intégration WhatsApp.</p>
+</div>
 
 ---
 
@@ -166,9 +177,9 @@ style: |
   <div class="dt-card" style="border-top-color: #f39c12;">
     <h4>Comprendre l'utilisateur</h4>
     <blockquote style="font-style: italic; background: white; padding: 15px; border-radius: 8px;">
-      <p>- La formatrice Fatine souhaite un système simple pour créer et gérer des QCM personnalisables, avec correction automatique et affichage du score final.</p>
-      <p>- Le formateur Youssef souhaite un QCM structuré par session et objectif, lié au professeur, avec un calcul automatique des résultats.</p>
-      <p>- L’administrateur Hamouda souhaite une plateforme fiable avec des données validées, un QCM structuré et sécurisé, ainsi qu’une interface simple pour faciliter la gestion des candidats.</p>
+      <p>- <strong>Mohamed (Conducteur, 28 ans)</strong> passe 60% de son temps à gérer des messages WhatsApp pour trouver des passagers. Il veut partager ses frais de carburant mais n'a aucun outil fiable pour organiser ses trajets.</p>
+      <p>- <strong>Fatima (Voyageuse, 22 ans)</strong> cherche des trajets bon marché entre les villes mais ne trouve que des groupes Facebook désorganisés, sans vérification des conducteurs ni garantie de sécurité.</p>
+      <p>- <strong>Karim (Administrateur, 30 ans)</strong> doit modérer manuellement les profils et les trajets sans aucun tableau de bord centralisé, ce qui le rend incapable de détecter les fraudes en temps réel.</p>
     </blockquote>
   </div>
 </div>
@@ -182,9 +193,9 @@ style: |
   <div class="dt-card" style="border-top-color: #f39c12;">
     <h4>Cadrage du problème</h4>
     <blockquote style="font-style: italic; background: white; padding: 15px; border-radius: 8px;">
-     <p> - Comment pourrions-nous permettre aux formateurs de générer des QCM par objectif en quelques clics, tout en garantissant une correction instantanée pour l'étudiant ? </p>
-      <p>- Comment pourrions-nous structurer l'interface pour que la liaison entre une question, un professeur et un objectif de session soit totalement transparente ? </p>
-      <p>-Comment pourrions-nous concevoir une interface administrateur simple, claire et ergonomique permettant une gestion efficace des candidats et des QCM ? </p>
+      <p>- Comment pourrions-nous <strong>centraliser</strong> la publication et la recherche de trajets en une seule plateforme, sans passer par Facebook ou WhatsApp ?</p>
+      <p>- Comment pourrions-nous <strong>instaurer la confiance</strong> entre conducteurs et voyageurs inconnus grâce à la vérification de profil (CIN + téléphone) et un système de notation ?</p>
+      <p>- Comment pourrions-nous donner à l'administrateur un <strong>tableau de bord proactif</strong> avec alertes en temps réel pour modérer la plateforme efficacement ?</p>
     </blockquote>
   </div>
 </div>
@@ -197,9 +208,11 @@ style: |
 <div class="img-container">
   <div class="dt-card" style="border-top-color: #f39c12;">
     <h4>Solutions retenues</h4>
-    <p>• Interface <strong>"Single Question"</strong> pour éviter la surcharge cognitive.</p>
-    <p>• <strong>Timer dynamique</strong> par catégorie de question.</p>
-    <p>• <strong>Dashboard</strong> temps réel pour le suivi des formateurs.</p>
+    <p>• Interface de <strong>publication de trajet en 2 minutes</strong> pour le conducteur (from, to, date, seats, price).</p>
+    <p>• <strong>Système de vérification</strong> CIN + téléphone pour instaurer la confiance dès l'inscription.</p>
+    <p>• <strong>Notifications WhatsApp</strong> automatiques à chaque confirmation de réservation.</p>
+    <p>• <strong>Dashboard Admin</strong> avec KPIs en temps réel : trajets actifs, signalements, statistiques.</p>
+    <p>• Modèle de démarrage <strong>gratuit</strong> pour construire la base d'utilisateurs, puis commission de 10% par réservation.</p>
   </div>
 </div>
 
@@ -215,6 +228,7 @@ style: |
 </div>
 
 ---
+
 ## Branche Fonctionnelle : Maquettes (UI/UX)
 
 
@@ -245,12 +259,11 @@ style: |
   </div>
   <div class="dt-card" style="margin-top:0; border-top-color: #27ae60;">
     <ul>
-      <li><strong> AJAX :</strong> Interactions dynamiques (ex: Modales) sans rechargement de page.</li>
-      <li><strong>Alpine.js :</strong>  Librairie JavaScript pour les interactions dynamiques.</li>
+      <li><strong>Alpine.js :</strong> Librairie JavaScript pour les interactions dynamiques.</li>
       <li><strong>Spatie :</strong> Librairie pour la gestion des permissions et rôles.</li>
-      <li><strong>Vite :</strong>   Outil de build rapide.</li>
+      <li><strong>Vite :</strong> Outil de build rapide.</li>
       <li><strong>Lucide :</strong> Librairie d'icônes.</li>
-      <li><strong>Tailwind CSS :</strong>Développement rapide, responsive.</li>
+      <li><strong>Tailwind CSS :</strong> Développement rapide, responsive.</li>
     </ul>
   </div>
 </div>
@@ -282,7 +295,7 @@ style: |
   <div class="dt-card" style="margin-top:0; border-top-color: #27ae60;">
     <h4>Gestion & Déploiement</h4>
     <ul>
-      <li><strong>Modelisation UML :</strong>Mermaid/PlantUML</li>
+      <li><strong>Modelisation UML :</strong> Mermaid/PlantUML</li>
       <li><strong>Gestion de version :</strong> Git (GitHub)</li>
       <li><strong>Navigateur :</strong> Chrome DevTools</li>
     </ul>
@@ -292,11 +305,12 @@ style: |
 <br>
 
 ---
+
 ## 6. Conclusion
 
-- **Objectifs atteints** : Application QCM fonctionnelle et responsive.
-- **Compétences** : Maîtrise du cycle Agile et de la stack Full-stack.
-- **Perspectives** : Intégration d'un module d'IA pour l'analyse prédictive.
+- **Objectifs atteints** : Plateforme BlassaCar fonctionnelle et responsive.
+- **Compétences** : Maîtrise du cycle Agile, Design Thinking et de la stack Full-stack Laravel.
+- **Perspectives** : Intégration d'un module de paiement en ligne (CMI) et d'une application mobile.
 
 <br>
 
