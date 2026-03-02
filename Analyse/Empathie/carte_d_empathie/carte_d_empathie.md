@@ -114,4 +114,51 @@ _Le covoiturage simple et pas cher au Maroc_
 
 ---
 
+## 👤 PROFIL 3 — L'Administrateur
+
+**Rôle : Administrateur Plateforme**
+**Utilisateur Principal : Ayoub, 25 ans** — responsable de la gestion et modération de BlassaCar.
+
+---
+
+### 👂 Ce qu'il ENTEND
+* "Il y a un faux profil qui publie des trajets inexistants."
+* "Un conducteur ne s'est pas présenté au point de rendez-vous."
+* "Comment savoir si la plateforme grandit vraiment ?"
+* Les utilisateurs qui demandent : "Pourquoi mon compte est bloqué ?"
+
+### 👁️ Ce qu'il VOIT
+* Des signalements d'utilisateurs qui s'accumulent sans outil de traitement.
+* Des statistiques inexistantes sur l'activité de la plateforme.
+* Des profils non vérifiés qui peuvent nuire à la confiance des utilisateurs.
+* Des concurrents comme BlaBlaCar avec des dashboards avancés.
+
+### 🧠 Ce qu'il PENSE et RESSENT
+* Pense : "Je ne peux pas surveiller chaque trajet et chaque utilisateur manuellement."
+* Pense : "Comment savoir si la plateforme est saine sans données claires ?"
+* Ressent : Une pression constante pour maintenir la confiance des utilisateurs.
+* Ressent : Une frustration face au manque d'outils adaptés à son rôle.
+
+### 🗣️ Ce qu'il DIT et FAIT
+* Dit : "Je dois vérifier manuellement les profils signalés un par un."
+* Dit : "Je n'ai aucun moyen de savoir combien de trajets ont été complétés ce mois."
+* Fait : Consulte les signalements et les traite au cas par cas.
+* Fait : Vérifie manuellement les profils suspects sans workflow automatisé.
+
+### 🎯 Douleurs et Gains
+
+**🔴 DOULEURS (Pains)**
+* Absence d'un tableau de bord centralisé pour suivre l'activité.
+* Gestion manuelle et chronophage des signalements et des profils.
+* Impossibilité de détecter les fraudes ou abus en temps réel.
+* Manque de visibilité sur les tendances et la croissance de la plateforme.
+
+**🟢 GAINS (Gains)**
+* Un dashboard clair avec les KPIs essentiels en un coup d'œil.
+* Des alertes automatiques pour les signalements urgents.
+* Pouvoir suspendre ou valider un compte en un seul clic.
+* Des rapports hebdomadaires pour suivre la progression de la plateforme.
+
+---
+
 _Document créé dans le cadre de la phase d'Empathie du projet BlassaCar._
