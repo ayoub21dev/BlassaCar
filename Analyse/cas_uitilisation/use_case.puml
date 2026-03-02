@@ -1,3 +1,4 @@
+
 @startuml
 top to bottom direction
 
@@ -10,38 +11,40 @@ skinparam usecase {
 skinparam ArrowColor #555555
 skinparam ArrowFontSize 11
 
-title BlassaCar — Diagramme de Cas d'Utilisation
+title BlassaCar — Use Case Diagram
 
-actor Conducteur as C #lightblue
-actor Voyageur   as V #lightgreen
-actor Admin      as A #lightyellow
+actor Driver   as C #lightblue
+actor Traveler as V #lightgreen
+actor Admin    as A #lightyellow
 
-package "Authentification" {
-  usecase "S'inscrire" as UC1
-  usecase "Se connecter" as UC2
+package "Authentication" {
+  usecase "Register" as UC1
+  usecase "Login" as UC2
 }
 
-package "Gestion des Trajets (Conducteur)" {
-  usecase "Publier un trajet" as UC3
-  usecase "Modifier un trajet" as UC4
-  usecase "Annuler un trajet" as UC5
+package "Ride Management (Driver)" {
+  usecase "Post a Ride" as UC3
+  usecase "Edit a Ride" as UC4
+  usecase "Cancel a Ride" as UC5
 }
 
-package "Réservation (Voyageur)" {
-  usecase "Rechercher un trajet" as UC6
-  usecase "Réserver une place" as UC7
-  usecase "Annuler une réservation" as UC8
-  usecase "Laisser un avis" as UC9
+package "Booking (Traveler)" {
+  usecase "Search for a Ride" as UC6
+  usecase "Book a Seat" as UC7
+  usecase "Cancel a Booking" as UC8
+  usecase "Leave a Review" as UC9
 }
 
-package "Notifications" {
-  usecase "Recevoir une notification WhatsApp" as UC10
+package "Notifications (System)" {
+  usecase "Notify Driver\n(New Booking)" as UC10
+  usecase "Notify Traveler\n(Booking Confirmed)" as UC11
+  usecase "Notify on\nCancellation" as UC12
 }
 
 package "Administration" {
-  usecase "Gérer les utilisateurs" as UC11
-  usecase "Modérer les trajets" as UC12
-  usecase "Consulter les statistiques" as UC13
+  usecase "Manage Users" as UC13
+  usecase "Moderate Rides" as UC14
+  usecase "View Statistics" as UC15
 }
 
 C --> UC1
@@ -57,12 +60,14 @@ V --> UC7
 V --> UC8
 V --> UC9
 
-A --> UC11
-A --> UC12
 A --> UC13
+A --> UC14
+A --> UC15
 
 UC7 ..> UC10 : <<include>>
-UC3 ..> UC10 : <<include>>
-UC8 ..> UC10 : <<include>>
-UC9 ..> UC7 : <<extend>>
+UC7 ..> UC11 : <<include>>
+UC8 ..> UC12 : <<include>>
+UC5 ..> UC12 : <<include>>
+UC9 ..> UC7  : <<extend>>
+
 @enduml

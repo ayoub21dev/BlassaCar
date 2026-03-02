@@ -46,7 +46,7 @@ style: |
     display: flex; justify-content: center; align-items: center;
     border-radius: 50%; font-weight: bold; margin-right: 15px; flex-shrink: 0;
   }
-  
+
   .img-container {
     display: flex;
     flex-direction: column;
@@ -54,9 +54,9 @@ style: |
     height: 100%;
   }
   .img-methodo {
-    width: 85%;
+    width: 90%;
     height: auto;
-    max-height: 450px;
+    max-height: 700px;
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -94,7 +94,6 @@ style: |
     align-items: flex-start;
     height: 350px;
   }
-
 ---
 
 <div class="logo-header">
@@ -103,6 +102,7 @@ style: |
 </div>
 
 # **Projet de Fin de Formation**
+
 ### BlassaCar — Plateforme de covoiturage entre les villes du Maroc
 
 **Réalisé par :** <span class="highlight">Ayoub Jalyta</span>  
@@ -142,8 +142,6 @@ style: |
 
 ## 2. Méthodologie : Design Thinking
 
-
-
 <div class="img-container">
   <img src="images/designThinking.png" class="img-methodo" alt="Design Thinking">
 </div>
@@ -151,8 +149,6 @@ style: |
 ---
 
 ## Méthodologie : Scrum (Agile)
-
-
 
 <div class="img-container">
   <img src="images/scrum.jpg" class="img-methodo" alt="Scrum">
@@ -162,8 +158,6 @@ style: |
 
 ## Méthodologie : Processus 2TUP
 
-
-
 <div class="img-container">
   <img src="images/2TUP.PNG" class="img-methodo" alt="2TUP">
 </div>
@@ -171,6 +165,7 @@ style: |
 ---
 
 ## 3. Branche Fonctionnelle : Design Thinking
+
 ### 1. EMPATHIE
 
 <div class="img-container">
@@ -187,6 +182,7 @@ style: |
 ---
 
 ## Branche Fonctionnelle : Design Thinking
+
 ### 2. DÉFINITION
 
 <div class="img-container">
@@ -203,6 +199,7 @@ style: |
 ---
 
 ## Branche Fonctionnelle : Design Thinking
+
 ### 3. IDÉATION
 
 <div class="img-container">
@@ -220,29 +217,26 @@ style: |
 
 ## Branche Fonctionnelle : Cas d'utilisation
 
-
-
 <div class="img-container">
   <h3>Interaction Utilisateur (UML)</h3>
-  <img src="images/use-case.png" class="img-methodo" alt="Use Case">
+  <img src="images/usecaseGlobale.png" class="img-methodo" style="width: 100%; max-height: 750px;" alt="Use Case">
 </div>
 
 ---
 
 ## Branche Fonctionnelle : Maquettes (UI/UX)
 
-
-
 <div class="maquette-grid">
   <div style="text-align: center;">
-    <img src="images/maquette.png" class="img-methodo" style="height: 360px; width: auto;" alt="Maquette Desktop">
-    <p style="font-size: 0.3rem; color: #666;">Interface Administration</p>
+    <img src="images/maquette.png" class="img-methodo" style="height: 500px; width: auto;" alt="Maquette Desktop">
+    <p style="font-size: 0.8rem; color: #666;">Interface Administration</p>
   </div>
 </div>
 
 ---
 
 ## 4. Branche Technique : Tech Stack
+
 <div class="sommaire-grid">
   <div class="dt-card" style="margin-top:0;">
     <h4>Les technologies à utiliser</h4>
@@ -270,19 +264,16 @@ style: |
 
 ---
 
+## 5. Conception : Diagrammes UML
 
-## 5. Conception : Diagramme de classe
-
-
- <h3>Modélisation des données (MLD)</h3>
 <div class="img-container">
- 
-  <img src="images/diagramme-class.png" style="width: 100%;" alt="Diagramme de classe">
+   <h3>Modélisation des données (MLD)</h3>
+  <img src="images/diagramme-class.png" class="img-methodo" style="width: 100%; max-height: 800px;" alt="Diagramme de classe">
 </div>
 
 ---
 
-## 5. Démonstration : Environnement & Outils
+## 6. Démonstration : Environnement & Outils
 
 <div class="sommaire-grid">
   <div class="dt-card" style="margin-top:0;">
@@ -306,7 +297,7 @@ style: |
 
 ---
 
-## 6. Conclusion
+## 7. Conclusion
 
 - **Objectifs atteints** : Plateforme BlassaCar fonctionnelle et responsive.
 - **Compétences** : Maîtrise du cycle Agile, Design Thinking et de la stack Full-stack Laravel.
