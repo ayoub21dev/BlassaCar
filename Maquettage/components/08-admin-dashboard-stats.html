@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sky: {
+              50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 py-8">
+
+<!-- ============================================ -->
+<!-- BlassaCar Admin Dashboard Stats Component    -->
+<!-- ============================================ -->
+
+<div class="max-w-6xl mx-auto space-y-6 px-4">
+  
+  <!-- Stats Cards Row -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    
+    <!-- Total Users -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+      <div class="flex items-start justify-between">
+        <div>
+          <p class="text-sm font-medium text-gray-500">Total Users</p>
+          <p class="text-2xl font-bold text-gray-900 mt-1">12,458</p>
+          <div class="flex items-center gap-1 mt-2">
+            <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 7l-8.5 8.5-5-5L2 17"/>
+              <path d="M16 7h6v6"/>
+            </svg>
+            <span class="text-sm font-medium text-green-600">+12.5%</span>
+            <span class="text-xs text-gray-400">vs last month</span>
+          </div>
+        </div>
+        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Rides -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+      <div class="flex items-start justify-between">
+        <div>
+          <p class="text-sm font-medium text-gray-500">Active Rides</p>
+          <p class="text-2xl font-bold text-gray-900 mt-1">1,247</p>
+          <div class="flex items-center gap-1 mt-2">
+            <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 7l-8.5 8.5-5-5L2 17"/>
+              <path d="M16 7h6v6"/>
+            </svg>
+            <span class="text-sm font-medium text-green-600">+8.2%</span>
+            <span class="text-xs text-gray-400">vs last month</span>
+          </div>
+        </div>
+        <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
+            <circle cx="6.5" cy="16.5" r="2.5"/>
+            <circle cx="16.5" cy="16.5" r="2.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completed Trips -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+      <div class="flex items-start justify-between">
+        <div>
+          <p class="text-sm font-medium text-gray-500">Completed Trips</p>
+          <p class="text-2xl font-bold text-gray-900 mt-1">45,892</p>
+          <div class="flex items-center gap-1 mt-2">
+            <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 7l-8.5 8.5-5-5L2 17"/>
+              <path d="M16 7h6v6"/>
+            </svg>
+            <span class="text-sm font-medium text-green-600">+23.1%</span>
+            <span class="text-xs text-gray-400">vs last month</span>
+          </div>
+        </div>
+        <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Revenue -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+      <div class="flex items-start justify-between">
+        <div>
+          <p class="text-sm font-medium text-gray-500">Revenue (DH)</p>
+          <p class="text-2xl font-bold text-gray-900 mt-1">245,600</p>
+          <div class="flex items-center gap-1 mt-2">
+            <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 7l-8.5 8.5-5-5L2 17"/>
+              <path d="M16 7h6v6"/>
+            </svg>
+            <span class="text-sm font-medium text-green-600">+15.3%</span>
+            <span class="text-xs text-gray-400">vs last month</span>
+          </div>
+        </div>
+        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" x2="12" y1="2" y2="22"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts & Tables Row -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    
+    <!-- Chart Card -->
+    <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900">Rides Overview</h3>
+          <p class="text-sm text-gray-500">Monthly ride statistics</p>
+        </div>
+        <select class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-sky-500">
+          <option>Last 7 days</option>
+          <option>Last 30 days</option>
+          <option>Last 3 months</option>
+        </select>
+      </div>
+      
+      <!-- Simple CSS Bar Chart -->
+      <div class="flex items-end justify-between gap-2 h-48">
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 40%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Mon</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 65%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Tue</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 55%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Wed</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 80%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Thu</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 90%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Fri</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 100%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Sat</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-2">
+          <div class="w-full bg-sky-100 rounded-t-lg relative" style="height: 75%">
+            <div class="absolute bottom-0 w-full bg-sky-500 rounded-t-lg transition-all hover:bg-sky-600" style="height: 100%"></div>
+          </div>
+          <span class="text-xs text-gray-500">Sun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alerts & Notifications -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-semibold text-gray-900">Alerts</h3>
+        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">3 new</span>
+      </div>
+      
+      <div class="space-y-3">
+        <!-- Alert 1 -->
+        <div class="flex items-start gap-3 p-3 bg-red-50 border border-red-100 rounded-xl">
+          <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" x2="12" y1="9" y2="13"/>
+              <line x1="12" x2="12.01" y1="17" y2="17"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium text-red-900">Reported User</p>
+            <p class="text-xs text-red-600 truncate">User #4582 received 3 reports</p>
+            <p class="text-xs text-gray-400 mt-1">10 min ago</p>
+          </div>
+        </div>
+
+        <!-- Alert 2 -->
+        <div class="flex items-start gap-3 p-3 bg-amber-50 border border-amber-100 rounded-xl">
+          <div class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" x2="12" y1="8" y2="12"/>
+              <line x1="12" x2="12.01" y1="16" y2="16"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium text-amber-900">Verification Pending</p>
+            <p class="text-xs text-amber-600 truncate">12 users awaiting CIN verification</p>
+            <p class="text-xs text-gray-400 mt-1">1 hour ago</p>
+          </div>
+        </div>
+
+        <!-- Alert 3 -->
+        <div class="flex items-start gap-3 p-3 bg-blue-50 border border-blue-100 rounded-xl">
+          <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium text-blue-900">Support Ticket</p>
+            <p class="text-xs text-blue-600 truncate">New ticket #892 from user</p>
+            <p class="text-xs text-gray-400 mt-1">2 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="w-full mt-4 py-2.5 text-sm font-medium text-sky-600 bg-sky-50 rounded-xl hover:bg-sky-100 transition-colors">
+        View All Alerts
+      </button>
+    </div>
+  </div>
+
+  <!-- Recent Activity Table -->
+  <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+    <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+      <h3 class="text-lg font-semibold text-gray-900">Recent Rides</h3>
+      <button class="text-sm text-sky-600 hover:text-sky-700 font-medium">View All</button>
+    </div>
+    
+    <div class="overflow-x-auto">
+      <table class="w-full">
+        <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Driver</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Route</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Date</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Status</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Price</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Action</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-6 py-4">
+              <div class="flex items-center gap-3">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Driver" class="w-8 h-8 rounded-full object-cover">
+                <span class="font-medium text-gray-900">Ahmed B.</span>
+              </div>
+            </td>
+            <td class="px-6 py-4 text-sm text-gray-600">Casa → Marrakech</td>
+            <td class="px-6 py-4 text-sm text-gray-600">Mar 15, 2024</td>
+            <td class="px-6 py-4">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                Completed
+              </span>
+            </td>
+            <td class="px-6 py-4 text-sm font-medium text-gray-900">80 DH</td>
+            <td class="px-6 py-4">
+              <button class="text-sky-600 hover:text-sky-800 text-sm font-medium">View</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-6 py-4">
+              <div class="flex items-center gap-3">
+                <img src="https://i.pravatar.cc/150?img=5" alt="Driver" class="w-8 h-8 rounded-full object-cover">
+                <span class="font-medium text-gray-900">Fatima L.</span>
+              </div>
+            </td>
+            <td class="px-6 py-4 text-sm text-gray-600">Rabat → Casa</td>
+            <td class="px-6 py-4 text-sm text-gray-600">Mar 14, 2024</td>
+            <td class="px-6 py-4">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-sky-100 text-sky-800">
+                Active
+              </span>
+            </td>
+            <td class="px-6 py-4 text-sm font-medium text-gray-900">50 DH</td>
+            <td class="px-6 py-4">
+              <button class="text-sky-600 hover:text-sky-800 text-sm font-medium">View</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-6 py-4">
+              <div class="flex items-center gap-3">
+                <img src="https://i.pravatar.cc/150?img=13" alt="Driver" class="w-8 h-8 rounded-full object-cover">
+                <span class="font-medium text-gray-900">Youssef M.</span>
+              </div>
+            </td>
+            <td class="px-6 py-4 text-sm text-gray-600">Fès → Tangier</td>
+            <td class="px-6 py-4 text-sm text-gray-600">Mar 14, 2024</td>
+            <td class="px-6 py-4">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
+                Pending
+              </span>
+            </td>
+            <td class="px-6 py-4 text-sm font-medium text-gray-900">120 DH</td>
+            <td class="px-6 py-4">
+              <button class="text-sky-600 hover:text-sky-800 text-sm font-medium">View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
