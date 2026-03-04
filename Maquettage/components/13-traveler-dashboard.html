@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveler Dashboard Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.3/dist/preline.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sky: {
+              50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 py-8">
+
+<!-- ============================================ -->
+<!-- BlassaCar Traveler Dashboard Component       -->
+<!-- ============================================ -->
+
+<div class="max-w-6xl mx-auto space-y-6 px-4">
+  <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <p class="text-sm font-medium text-sky-600">Traveler Dashboard</p>
+        <h1 class="text-2xl font-bold text-gray-900 mt-1">Hello, Fatima</h1>
+        <p class="text-sm text-gray-500 mt-1">Track your trips, bookings, and savings in one place.</p>
+      </div>
+      <button class="px-5 py-2.5 bg-sky-600 text-white font-medium rounded-xl hover:bg-sky-700 transition-colors">
+        Find a Ride
+      </button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
+      <p class="text-sm text-gray-500">Upcoming Trips</p>
+      <p class="text-2xl font-bold text-gray-900 mt-1">3</p>
+      <p class="text-xs text-sky-600 mt-2">Next ride in 4 hours</p>
+    </div>
+    <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
+      <p class="text-sm text-gray-500">Completed Trips</p>
+      <p class="text-2xl font-bold text-gray-900 mt-1">21</p>
+      <p class="text-xs text-green-600 mt-2">+2 this month</p>
+    </div>
+    <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
+      <p class="text-sm text-gray-500">On-time Trips</p>
+      <p class="text-2xl font-bold text-gray-900 mt-1">94%</p>
+      <p class="text-xs text-green-600 mt-2">Reliable departures</p>
+    </div>
+    <div class="bg-white rounded-2xl border border-gray-200 p-5 shadow-sm">
+      <p class="text-sm text-gray-500">Avg. Driver Rating</p>
+      <p class="text-2xl font-bold text-gray-900 mt-1">4.9</p>
+      <p class="text-xs text-amber-600 mt-2">Trusted rides only</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 gap-6">
+    <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-gray-900 mb-4">Next Confirmed Trip</h3>
+      <div class="rounded-2xl border border-sky-200 bg-sky-50 p-5">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <p class="text-xl font-bold text-gray-900">Casablanca → Rabat</p>
+            <p class="text-sm text-gray-600 mt-1">Today at 18:00 • Pickup: Maarif, Casa</p>
+          </div>
+          <span class="px-3 py-1 text-xs font-medium text-emerald-700 bg-emerald-100 rounded-full">Confirmed</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
+          <div class="bg-white rounded-xl p-3 border border-sky-100">
+            <p class="text-xs text-gray-500">Driver</p>
+            <p class="text-sm font-semibold text-gray-900 mt-1">Ahmed Benali</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 border border-sky-100">
+            <p class="text-xs text-gray-500">Seat</p>
+            <p class="text-sm font-semibold text-gray-900 mt-1">1 Passenger</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 border border-sky-100">
+            <p class="text-xs text-gray-500">Price</p>
+            <p class="text-sm font-semibold text-gray-900 mt-1">70 DH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+    <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+      <h3 class="text-lg font-semibold text-gray-900">My Booking History</h3>
+      <button class="text-sm text-sky-600 font-medium hover:text-sky-700">View All</button>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full">
+        <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Route</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Date</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Driver</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Price</th>
+            <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 text-sm">
+          <tr>
+            <td class="px-6 py-4 font-medium text-gray-900">Casa → Rabat</td>
+            <td class="px-6 py-4 text-gray-600">Mar 10, 2026</td>
+            <td class="px-6 py-4 text-gray-600">Ahmed B.</td>
+            <td class="px-6 py-4 text-gray-600">70 DH</td>
+            <td class="px-6 py-4"><span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded-full">Confirmed</span></td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 font-medium text-gray-900">Rabat → Fes</td>
+            <td class="px-6 py-4 text-gray-600">Mar 2, 2026</td>
+            <td class="px-6 py-4 text-gray-600">Youssef M.</td>
+            <td class="px-6 py-4 text-gray-600">95 DH</td>
+            <td class="px-6 py-4"><span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded-full">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.3/dist/preline.min.js"></script>
+
+</body>
+</html>

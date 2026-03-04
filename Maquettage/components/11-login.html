@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Component</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.3/dist/preline.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
@@ -31,16 +32,19 @@
 <!-- ============================================ -->
 
 <!-- Logo / Home Link -->
-<a href="../website.html" class="flex items-center gap-3 mb-8">
-  <div class="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center">
-    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
-      <circle cx="6.5" cy="16.5" r="2.5"/>
-      <circle cx="16.5" cy="16.5" r="2.5"/>
+<a href="../website.html" class="flex items-center gap-3 mb-8" aria-label="BlassaCar Home">
+  <div class="relative w-11 h-11 flex items-center justify-center">
+    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-700 shadow-lg shadow-sky-500/35"></div>
+    <div class="absolute inset-[2px] rounded-[14px] bg-white/10"></div>
+    <svg class="relative w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20s5-4.5 5-8.5a5 5 0 1 0-10 0c0 4 5 8.5 5 8.5z"/>
+      <path d="M12 8v1.2"/>
+      <path d="M12 10.9v1.2"/>
+      <path d="M12 13.8v1.2"/>
     </svg>
   </div>
-  <span class="text-2xl font-bold">
-    <span class="text-gray-900">Blassa</span><span class="text-sky-500">Car</span>
+  <span class="text-2xl font-extrabold tracking-[-0.02em]">
+    <span class="text-gray-900">Blassa</span><span class="text-sky-600">Car</span>
   </span>
 </a>
 
@@ -125,6 +129,8 @@
     <a href="#" class="text-sky-600 font-medium hover:text-sky-700">Sign up</a>
   </p>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.3/dist/preline.min.js"></script>
 
 </body>
 </html>

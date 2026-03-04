@@ -51,13 +51,18 @@
   <div class="bg-gray-900 text-white py-4 px-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <svg class="w-8 h-8 text-sky-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
-          <circle cx="6.5" cy="16.5" r="2.5"/>
-          <circle cx="16.5" cy="16.5" r="2.5"/>
-        </svg>
+        <div class="relative w-11 h-11 flex items-center justify-center">
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-700 shadow-lg shadow-sky-500/35"></div>
+          <div class="absolute inset-[2px] rounded-[14px] bg-white/10"></div>
+          <svg class="relative w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20s5-4.5 5-8.5a5 5 0 1 0-10 0c0 4 5 8.5 5 8.5z"/>
+            <path d="M12 8v1.2"/>
+            <path d="M12 10.9v1.2"/>
+            <path d="M12 13.8v1.2"/>
+          </svg>
+        </div>
         <div>
-          <h1 class="font-bold text-lg">BlassaCar</h1>
+          <h1 class="font-bold text-lg tracking-tight">BlassaCar</h1>
           <p class="text-xs text-gray-400">UI Components Library</p>
         </div>
       </div>
@@ -95,9 +100,11 @@
           <a href="#profile" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">06. User Profile</a>
           <a href="#reviews" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">07. Review Card</a>
           <a href="#admin" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">08. Admin Dashboard</a>
-          <a href="#footer" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">09. Footer</a>
-          <a href="#signup" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">10. Sign Up</a>
-          <a href="#login" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">11. Login</a>
+          <a href="#driver-dashboard" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">09. Driver Dashboard</a>
+          <a href="#traveler-dashboard" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">10. Traveler Dashboard</a>
+          <a href="#footer" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">11. Footer</a>
+          <a href="#signup" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">12. Sign Up</a>
+          <a href="#login" class="block px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-50 hover:text-sky-600 transition-colors">13. Login</a>
         </nav>
         
         <div class="mt-8 p-4 bg-sky-50 rounded-xl">
@@ -200,10 +207,32 @@
         </div>
       </section>
 
-      <!-- 09. Footer -->
+      <!-- 09. Driver Dashboard -->
+      <section id="driver-dashboard" class="component-section border-b border-gray-200">
+        <div class="p-6 bg-gray-50 border-b border-gray-200">
+          <h2 class="text-lg font-semibold text-gray-900">09. Driver Dashboard</h2>
+          <p class="text-sm text-gray-500">Driver KPIs, ride management, and booking requests</p>
+        </div>
+        <div class="p-8 bg-gray-100">
+          <iframe src="components/12-driver-dashboard.html" class="w-full h-[900px] border-0 rounded-xl shadow-sm bg-white"></iframe>
+        </div>
+      </section>
+
+      <!-- 10. Traveler Dashboard -->
+      <section id="traveler-dashboard" class="component-section border-b border-gray-200">
+        <div class="p-6 bg-gray-50 border-b border-gray-200">
+          <h2 class="text-lg font-semibold text-gray-900">10. Traveler Dashboard</h2>
+          <p class="text-sm text-gray-500">Traveler trips, booking status, and recommendations</p>
+        </div>
+        <div class="p-8 bg-gray-100">
+          <iframe src="components/13-traveler-dashboard.html" class="w-full h-[900px] border-0 rounded-xl shadow-sm bg-white"></iframe>
+        </div>
+      </section>
+
+      <!-- 11. Footer -->
       <section id="footer" class="component-section">
         <div class="p-6 bg-gray-50 border-b border-gray-200">
-          <h2 class="text-lg font-semibold text-gray-900">09. Footer</h2>
+          <h2 class="text-lg font-semibold text-gray-900">11. Footer</h2>
           <p class="text-sm text-gray-500">Site footer with links and social media</p>
         </div>
         <div class="p-0">
@@ -211,10 +240,10 @@
         </div>
       </section>
 
-      <!-- 10. Sign Up -->
+      <!-- 12. Sign Up -->
       <section id="signup" class="component-section border-b border-gray-200">
         <div class="p-6 bg-gray-50 border-b border-gray-200">
-          <h2 class="text-lg font-semibold text-gray-900">10. Sign Up</h2>
+          <h2 class="text-lg font-semibold text-gray-900">12. Sign Up</h2>
           <p class="text-sm text-gray-500">Account creation form</p>
         </div>
         <div class="p-0">
@@ -222,10 +251,10 @@
         </div>
       </section>
 
-      <!-- 11. Login -->
+      <!-- 13. Login -->
       <section id="login" class="component-section">
         <div class="p-6 bg-gray-50 border-b border-gray-200">
-          <h2 class="text-lg font-semibold text-gray-900">11. Login</h2>
+          <h2 class="text-lg font-semibold text-gray-900">13. Login</h2>
           <p class="text-sm text-gray-500">User login form with social options</p>
         </div>
         <div class="p-0">
