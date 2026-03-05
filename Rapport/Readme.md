@@ -103,6 +103,22 @@ style: |
     align-items: flex-start;
     height: 350px;
   }
+  section.class-diagram-slide {
+    padding: 35px 45px;
+  }
+  section.class-diagram-slide h2 {
+    margin-bottom: 12px;
+  }
+  .class-diagram-container {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .class-diagram-img {
+    width: auto !important;
+    max-width: 100%;
+    max-height: 72vh !important;
+    object-fit: contain;
+  }
 ---
 
 <div class="logo-header">
@@ -289,11 +305,12 @@ style: |
 
 ---
 
+<!-- _class: class-diagram-slide -->
 ## 5. Conception : Diagrammes UML
 
-<div class="img-container">
+<div class="img-container class-diagram-container">
    <h3>Modélisation des données (MLD)</h3>
-  <img src="images/digramedeClass.png" class="img-methodo" style="width: 100%; max-height: 800px;" alt="Diagramme de classe">
+  <img src="images/digramedeClass.png" class="img-methodo class-diagram-img" alt="Diagramme de classe">
 </div>
 
 ---
