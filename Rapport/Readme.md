@@ -293,7 +293,7 @@ style: |
 
 <div class="img-container">
    <h3>Modélisation des données (MLD)</h3>
-  <img src="images/diagramme-class.png" class="img-methodo" style="width: 100%; max-height: 800px;" alt="Diagramme de classe">
+  <img src="images/digramedeClass.png" class="img-methodo" style="width: 100%; max-height: 800px;" alt="Diagramme de classe">
 </div>
 
 ---
