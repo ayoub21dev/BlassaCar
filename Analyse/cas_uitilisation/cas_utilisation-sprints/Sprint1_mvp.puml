@@ -11,40 +11,58 @@ skinparam ArrowColor #555555
 skinparam ArrowFontSize 11
 skinparam linetype ortho
 
-title BlassaCar - Sprint 1 : MVP (Mobile + Web)
+title BlassaCar - Sprint 1 : MVP (Web App + WhatsApp Notification)
 
-actor Driver   as C #lightblue
-actor Traveler as V #lightgreen
+actor Driver as D #lightblue
+actor Traveler as T #lightgreen
 
 rectangle "Sprint 1 - MVP" {
   usecase "Register" as UC1
   usecase "Login" as UC2
 
   usecase "Post a Ride" as UC3
+  usecase "Search for a Ride" as UC4
+  usecase "View Ride Details" as UC5
 
-  usecase "Search for a Ride" as UC6
-  usecase "Book a Seat" as UC7
+  usecase "Request a Seat" as UC6
+  usecase "View Booking Status" as UC7
 
-  usecase "Send WhatsApp\nNotification (Driver)" as UC10
-  usecase "Send WhatsApp\nNotification (Traveler)" as UC11
+  usecase "View Booking Requests" as UC8
+  usecase "Accept Booking Request" as UC9
+  usecase "Reject Booking Request" as UC10
+
+  usecase "Send WhatsApp Notification\nto Driver" as UC11
+  usecase "Update Booking Status" as UC12
 }
 
-C --> UC1
-C --> UC2
-C --> UC3
+D --> UC1
+D --> UC2
+D --> UC3
+D --> UC8
+D --> UC9
+D --> UC10
 
-V --> UC1
-V --> UC2
-V --> UC6
-V --> UC7
+T --> UC1
+T --> UC2
+T --> UC4
+T --> UC5
+T --> UC6
+T --> UC7
 
-UC7 ..> UC6  : <<include>>
-UC7 ..> UC10 : <<include>>
-UC7 ..> UC11 : <<include>>
+UC6 ..> UC5  : <<include>>
+UC6 ..> UC11 : <<include>>
+UC9 ..> UC12 : <<include>>
+UC10 ..> UC12 : <<include>>
 
 note right of UC11
-In MVP: booking request received
-(not necessarily confirmed)
+Driver receives a WhatsApp notification
+asking him to open the web app
+to review the booking request
+end note
+
+note right of UC12
+Booking status:
+Pending / Accepted / Rejected
 end note
 
 @enduml
