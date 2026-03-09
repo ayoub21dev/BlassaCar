@@ -235,8 +235,8 @@ style: |
 
 ## Branche Fonctionnelle : Cas d'utilisation
 
-<div class="img-container" style="justify-content: center; align-items: center;">
-  <img src="images/useCaseGlobalee.png" class="img-methodo" style="width: 90%; max-height: 600px; margin: 0 auto;" alt="Use Case">
+<div style="text-align: center; width: 115%; margin-left: -7.5%; margin-top: -20px;">
+  <img src="images/useCaseGlobalee.png" style="width: 100%; height: auto; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);" alt="Use Case Global">
 </div>
 
 ---
