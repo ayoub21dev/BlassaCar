@@ -238,6 +238,10 @@ style: |
     <img src="images/maquette.png" class="img-methodo" style="height: 360px; width: auto;" alt="Maquette Desktop">
     <p style="font-size: 0.3rem; color: #666;">Interface Administration</p>
   </div>
+  <div style="text-align: center;">
+    <img src="images/HomePage.png" class="img-methodo" style="height: 360px; width: auto;" alt="Public Landing">
+    <p style="font-size: 0.3rem; color: #666;">Public Landing</p>
+  </div>
 </div>
 
 ---

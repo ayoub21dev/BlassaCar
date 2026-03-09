@@ -101,7 +101,7 @@ style: |
     gap: 15px;
     justify-content: center;
     align-items: flex-start;
-    height: 350px;
+    min-height: 400px;
   }
   section.class-diagram-slide {
     padding: 35px 45px;
@@ -177,7 +177,7 @@ style: |
 ## Méthodologie : Processus 2TUP
 
 <div class="img-container">
-  <img src="images/2TUP.PNG" class="img-methodo" alt="2TUP">
+  <img src="images/2TUP.png" class="img-methodo" alt="2TUP">
 </div>
 
 ---
@@ -235,9 +235,8 @@ style: |
 
 ## Branche Fonctionnelle : Cas d'utilisation
 
-<div class="img-container">
-  <h3>Interaction Utilisateur (UML)</h3>
-  <img src="images/useCaseGlobalee.png" class="img-methodo" style="width: 100%; max-height: 750px;" alt="Use Case">
+<div class="img-container" style="justify-content: center; align-items: center;">
+  <img src="images/useCaseGlobalee.png" class="img-methodo" style="width: 90%; max-height: 600px; margin: 0 auto;" alt="Use Case">
 </div>
 
 ---
@@ -253,18 +252,43 @@ style: |
 ## Branche Fonctionnelle : Sprint 2
 
 <div class="img-container" style="height: auto;">
-  <img src="images/Sprint2.png" class="img-sprint" alt="Sprint 2">
+  <img src="images/sprint2.png" class="img-sprint" alt="Sprint 2">
 </div>
 
 ---
 
-## Branche Fonctionnelle : Maquettes (UI/UX)
+## Branche Fonctionnelle : Maquettes - Landing Page
 
-<div class="maquette-grid">
-  <div style="text-align: center;">
-    <img src="images/maquette.png" class="img-methodo" style="height: 500px; width: auto;" alt="Maquette Desktop">
-    <p style="font-size: 0.8rem; color: #666;">Interface Administration</p>
-  </div>
+<div class="img-container">
+  <img src="images/HomePage.png" class="img-methodo" style="height: 500px; width: auto;" alt="Public Landing">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Page d'accueil de la plateforme</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Admin
+
+<div class="img-container">
+  <img src="images/AdminDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Administration">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord de l'administrateur</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Chauffeur
+
+<div class="img-container">
+  <img src="images/DriverDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Chauffeur">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du conducteur</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Voyageur
+
+<div class="img-container">
+  <img src="images/TravelrDashobrd.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Voyageur">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du voyageur</p>
 </div>
 
 ---
