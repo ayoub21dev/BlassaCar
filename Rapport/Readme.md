@@ -152,15 +152,8 @@ style: |
 
 ## 1. Contexte du projet
 
-<div class="dt-card">
-  <h4>Problème identifié</h4>
-  <p>Au Maroc, des milliers de personnes cherchent quotidiennement des trajets partagés entre les villes (Rabat, Casablanca, Marrakech, Fès...). Aujourd'hui, cette recherche se fait <strong>via des groupes Facebook et WhatsApp</strong>, sans aucune organisation, vérification ou sécurité.</p>
-  <br>
-  <h4>Solution proposée</h4>
-  <p><strong>BlassaCar</strong> est une plateforme web de covoiturage 100% marocaine qui centralise la publication, la recherche et la réservation de trajets inter-villes, avec un système de vérification des profils et de notation pour instaurer la confiance.</p>
-  <br>
-  <h4>Inspiration</h4>
-  <p>Inspirée de BlaBlaCar, mais adaptée au marché marocain : paiement local (CMI, CashPlus), interface en Darija/Français, et intégration WhatsApp.</p>
+<div class="img-container">
+  <img src="images/Context.png" class="img-sprint" alt="Contexte du projet">
 </div>
 
 ---
