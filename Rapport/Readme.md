@@ -186,15 +186,8 @@ style: |
 
 ### 1. EMPATHIE
 
-<div class="img-container">
-  <div class="dt-card" style="border-top-color: #f39c12;">
-    <h4>Comprendre l'utilisateur</h4>
-    <blockquote style="font-style: italic; background: white; padding: 15px; border-radius: 8px;">
-      <p>- <strong>Mohamed (Conducteur, 28 ans)</strong> passe 60% de son temps à gérer des messages WhatsApp pour trouver des passagers. Il veut partager ses frais de carburant mais n'a aucun outil fiable pour organiser ses trajets.</p>
-      <p>- <strong>Fatima (Voyageuse, 22 ans)</strong> cherche des trajets bon marché entre les villes mais ne trouve que des groupes Facebook désorganisés, sans vérification des conducteurs ni garantie de sécurité.</p>
-      <p>- <strong>Karim (Administrateur, 30 ans)</strong> doit modérer manuellement les profils et les trajets sans aucun tableau de bord centralisé, ce qui le rend incapable de détecter les fraudes en temps réel.</p>
-    </blockquote>
-  </div>
+<div class="img-container" style="justify-content: center; align-items: center;">
+  <img src="images/empati.png" style="width: 65%; max-width: 600px; height: auto; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px;" alt="Empathie">
 </div>
 
 ---
