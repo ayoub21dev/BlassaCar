@@ -122,8 +122,8 @@ style: |
 ---
 
 <div class="logo-header">
-  <img src="images/ofppt-logo.png" alt="Logo Left">
-  <img src="images/logo-solicode.png" alt="Logo Right">
+  <img src="./images/ofppt-logo.png" alt="Logo Left">
+  <img src="./images/logo-solicode.png" alt="Logo Right">
 </div>
 
 # **Projet de Fin de Formation**
@@ -153,7 +153,7 @@ style: |
 ## 1. Contexte du projet
 
 <div class="img-container">
-  <img src="images/Context.png" class="img-sprint" alt="Contexte du projet">
+  <img src="./images/Context.png" class="img-sprint" alt="Contexte du projet">
 </div>
 
 ---
@@ -161,7 +161,7 @@ style: |
 ## 2. Méthodologie : Design Thinking
 
 <div class="img-container">
-  <img src="images/designThinking.png" class="img-methodo" alt="Design Thinking">
+  <img src="./images/designThinking.png" class="img-methodo" alt="Design Thinking">
 </div>
 
 ---
@@ -169,7 +169,7 @@ style: |
 ## Méthodologie : Scrum (Agile)
 
 <div class="img-container">
-  <img src="images/scrum.jpg" class="img-methodo" alt="Scrum">
+  <img src="./images/scrum.jpg" class="img-methodo" alt="Scrum">
 </div>
 
 ---
@@ -177,7 +177,7 @@ style: |
 ## Méthodologie : Processus 2TUP
 
 <div class="img-container">
-  <img src="images/2TUP.png" class="img-methodo" alt="2TUP">
+  <img src="./images/2TUP.png" class="img-methodo" alt="2TUP">
 </div>
 
 ---
@@ -187,7 +187,7 @@ style: |
 ### 1. EMPATHIE
 
 <div class="img-container" style="justify-content: center; align-items: center;">
-  <img src="images/empati.png" style="width: 65%; max-width: 600px; height: auto; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px;" alt="Empathie">
+  <img src="./images/empati.png" style="width: 65%; max-width: 600px; height: auto; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px;" alt="Empathie">
 </div>
 
 ---
@@ -229,7 +229,7 @@ style: |
 ## Branche Fonctionnelle : Cas d'utilisation
 
 <div style="text-align: center; width: 115%; margin-left: -7.5%; margin-top: -20px;">
-  <img src="images/useCaseGlobalee.png" style="width: 100%; height: auto; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);" alt="Use Case Global">
+  <img src="./images/useCaseGlobalee.png" style="width: 100%; height: auto; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);" alt="Use Case Global">
 </div>
 
 ---
@@ -237,7 +237,7 @@ style: |
 ## Branche Fonctionnelle : Sprint 1 (MVP)
 
 <div class="img-container" style="height: auto;">
-  <img src="images/sprint1.png" class="img-sprint" alt="Sprint 1">
+  <img src="./images/sprint1.png" class="img-sprint" alt="Sprint 1">
 </div>
 
 ---
@@ -245,7 +245,7 @@ style: |
 ## Branche Fonctionnelle : Sprint 2
 
 <div class="img-container" style="height: auto;">
-  <img src="images/sprint2.png" class="img-sprint" alt="Sprint 2">
+  <img src="./images/sprint2.png" class="img-sprint" alt="Sprint 2">
 </div>
 
 ---
@@ -253,7 +253,7 @@ style: |
 ## Branche Fonctionnelle : Maquettes - Landing Page
 
 <div class="img-container">
-  <img src="images/HomePage.png" class="img-methodo" style="height: 500px; width: auto;" alt="Public Landing">
+  <img src="./images/HomePage.png" class="img-methodo" style="height: 500px; width: auto;" alt="Public Landing">
   <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Page d'accueil de la plateforme</p>
 </div>
 
@@ -262,7 +262,7 @@ style: |
 ## Branche Fonctionnelle : Maquettes - Admin
 
 <div class="img-container">
-  <img src="images/AdminDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Administration">
+  <img src="./images/AdminDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Administration">
   <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord de l'administrateur</p>
 </div>
 
@@ -271,7 +271,7 @@ style: |
 ## Branche Fonctionnelle : Maquettes - Chauffeur
 
 <div class="img-container">
-  <img src="images/DriverDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Chauffeur">
+  <img src="./images/DriverDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Chauffeur">
   <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du conducteur</p>
 </div>
 
@@ -280,7 +280,7 @@ style: |
 ## Branche Fonctionnelle : Maquettes - Voyageur
 
 <div class="img-container">
-  <img src="images/TravelrDashobrd.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Voyageur">
+  <img src="./images/TravelrDashobrd.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Voyageur">
   <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du voyageur</p>
 </div>
 
@@ -320,7 +320,7 @@ style: |
 
 <div class="img-container class-diagram-container">
    <h3>Modélisation des données (MLD)</h3>
-  <img src="images/digramedeClass.png" class="img-methodo class-diagram-img" alt="Diagramme de classe">
+  <img src="./images/digramedeClass.png" class="img-methodo class-diagram-img" alt="Diagramme de classe">
 </div>
 
 ---

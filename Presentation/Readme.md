@@ -46,7 +46,7 @@ style: |
     display: flex; justify-content: center; align-items: center;
     border-radius: 50%; font-weight: bold; margin-right: 15px; flex-shrink: 0;
   }
-  
+
   .img-container {
     display: flex;
     flex-direction: column;
@@ -54,9 +54,18 @@ style: |
     height: 100%;
   }
   .img-methodo {
-    width: 85%;
+    width: 90%;
     height: auto;
-    max-height: 450px;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .img-sprint {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    max-width: 95%;
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -92,17 +101,33 @@ style: |
     gap: 15px;
     justify-content: center;
     align-items: flex-start;
-    height: 350px;
+    min-height: 400px;
   }
-
+  section.class-diagram-slide {
+    padding: 35px 45px;
+  }
+  section.class-diagram-slide h2 {
+    margin-bottom: 12px;
+  }
+  .class-diagram-container {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .class-diagram-img {
+    width: auto !important;
+    max-width: 100%;
+    max-height: 72vh !important;
+    object-fit: contain;
+  }
 ---
 
 <div class="logo-header">
-  <img src="images/ofppt-logo.png" alt="Logo Left">
-  <img src="images/logo-solicode.png" alt="Logo Right">
+  <img src="./images/ofppt-logo.png" alt="Logo Left">
+  <img src="./images/logo-solicode.png" alt="Logo Right">
 </div>
 
 # **Projet de Fin de Formation**
+
 ### BlassaCar — Plateforme de covoiturage entre les villes du Maroc
 
 **Réalisé par :** <span class="highlight">Ayoub Jalyta</span>  
@@ -127,66 +152,48 @@ style: |
 
 ## 1. Contexte du projet
 
-<div class="dt-card">
-  <h4>Problème identifié</h4>
-  <p>Au Maroc, des milliers de personnes cherchent quotidiennement des trajets partagés entre les villes (Rabat, Casablanca, Marrakech, Fès...). Aujourd'hui, cette recherche se fait <strong>via des groupes Facebook et WhatsApp</strong>, sans aucune organisation, vérification ou sécurité.</p>
-  <br>
-  <h4>Solution proposée</h4>
-  <p><strong>BlassaCar</strong> est une plateforme web de covoiturage 100% marocaine qui centralise la publication, la recherche et la réservation de trajets inter-villes, avec un système de vérification des profils et de notation pour instaurer la confiance.</p>
-  <br>
-  <h4>Inspiration</h4>
-  <p>Inspirée de BlaBlaCar, mais adaptée au marché marocain : paiement local (CMI, CashPlus), interface en Darija/Français, et intégration WhatsApp.</p>
+<div class="img-container">
+  <img src="./images/Context.png" class="img-sprint" alt="Contexte du projet">
 </div>
 
 ---
 
 ## 2. Méthodologie : Design Thinking
 
-
-
 <div class="img-container">
-  <img src="images/designThinking.png" class="img-methodo" alt="Design Thinking">
+  <img src="./images/designThinking.png" class="img-methodo" alt="Design Thinking">
 </div>
 
 ---
 
 ## Méthodologie : Scrum (Agile)
 
-
-
 <div class="img-container">
-  <img src="images/scrum.jpg" class="img-methodo" alt="Scrum">
+  <img src="./images/scrum.jpg" class="img-methodo" alt="Scrum">
 </div>
 
 ---
 
 ## Méthodologie : Processus 2TUP
 
-
-
 <div class="img-container">
-  <img src="images/2TUP.PNG" class="img-methodo" alt="2TUP">
+  <img src="./images/2TUP.png" class="img-methodo" alt="2TUP">
 </div>
 
 ---
 
 ## 3. Branche Fonctionnelle : Design Thinking
+
 ### 1. EMPATHIE
 
-<div class="img-container">
-  <div class="dt-card" style="border-top-color: #f39c12;">
-    <h4>Comprendre l'utilisateur</h4>
-    <blockquote style="font-style: italic; background: white; padding: 15px; border-radius: 8px;">
-      <p>- <strong>Mohamed (Conducteur, 28 ans)</strong> passe 60% de son temps à gérer des messages WhatsApp pour trouver des passagers. Il veut partager ses frais de carburant mais n'a aucun outil fiable pour organiser ses trajets.</p>
-      <p>- <strong>Fatima (Voyageuse, 22 ans)</strong> cherche des trajets bon marché entre les villes mais ne trouve que des groupes Facebook désorganisés, sans vérification des conducteurs ni garantie de sécurité.</p>
-      <p>- <strong>Karim (Administrateur, 30 ans)</strong> doit modérer manuellement les profils et les trajets sans aucun tableau de bord centralisé, ce qui le rend incapable de détecter les fraudes en temps réel.</p>
-    </blockquote>
-  </div>
+<div class="img-container" style="justify-content: center; align-items: center;">
+  <img src="./images/empati.png" style="width: 65%; max-width: 600px; height: auto; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px;" alt="Empathie">
 </div>
 
 ---
 
 ## Branche Fonctionnelle : Design Thinking
+
 ### 2. DÉFINITION
 
 <div class="img-container">
@@ -203,6 +210,7 @@ style: |
 ---
 
 ## Branche Fonctionnelle : Design Thinking
+
 ### 3. IDÉATION
 
 <div class="img-container">
@@ -220,33 +228,66 @@ style: |
 
 ## Branche Fonctionnelle : Cas d'utilisation
 
-
-
-<div class="img-container">
-  <h3>Interaction Utilisateur (UML)</h3>
-  <img src="images/use-case.png" class="img-methodo" alt="Use Case">
+<div style="text-align: center; width: 115%; margin-left: -7.5%; margin-top: -20px;">
+  <img src="./images/useCaseGlobalee.png" style="width: 100%; height: auto; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);" alt="Use Case Global">
 </div>
 
 ---
 
-## Branche Fonctionnelle : Maquettes (UI/UX)
+## Branche Fonctionnelle : Sprint 1 (MVP)
 
+<div class="img-container" style="height: auto;">
+  <img src="./images/sprint1.png" class="img-sprint" alt="Sprint 1">
+</div>
 
+---
 
-<div class="maquette-grid">
-  <div style="text-align: center;">
-    <img src="images/maquette.png" class="img-methodo" style="height: 360px; width: auto;" alt="Maquette Desktop">
-    <p style="font-size: 0.3rem; color: #666;">Interface Administration</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="images/HomePage.png" class="img-methodo" style="height: 360px; width: auto;" alt="Public Landing">
-    <p style="font-size: 0.3rem; color: #666;">Public Landing</p>
-  </div>
+## Branche Fonctionnelle : Sprint 2
+
+<div class="img-container" style="height: auto;">
+  <img src="./images/sprint2.png" class="img-sprint" alt="Sprint 2">
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Landing Page
+
+<div class="img-container">
+  <img src="./images/HomePage.png" class="img-methodo" style="height: 500px; width: auto;" alt="Public Landing">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Page d'accueil de la plateforme</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Admin
+
+<div class="img-container">
+  <img src="./images/AdminDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Administration">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord de l'administrateur</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Chauffeur
+
+<div class="img-container">
+  <img src="./images/DriverDashbord.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Chauffeur">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du conducteur</p>
+</div>
+
+---
+
+## Branche Fonctionnelle : Maquettes - Voyageur
+
+<div class="img-container">
+  <img src="./images/TravelrDashobrd.png" class="img-methodo" style="height: 500px; width: auto;" alt="Interface Voyageur">
+  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Tableau de bord du voyageur</p>
 </div>
 
 ---
 
 ## 4. Branche Technique : Tech Stack
+
 <div class="sommaire-grid">
   <div class="dt-card" style="margin-top:0;">
     <h4>Les technologies à utiliser</h4>
@@ -274,19 +315,17 @@ style: |
 
 ---
 
+<!-- _class: class-diagram-slide -->
+## 5. Conception : Diagrammes UML
 
-## 5. Conception : Diagramme de classe
-
-
- <h3>Modélisation des données (MLD)</h3>
-<div class="img-container">
- 
-  <img src="images/diagramme-class.png" style="width: 100%;" alt="Diagramme de classe">
+<div class="img-container class-diagram-container">
+   <h3>Modélisation des données (MLD)</h3>
+  <img src="./images/digramedeClass.png" class="img-methodo class-diagram-img" alt="Diagramme de classe">
 </div>
 
 ---
 
-## 5. Démonstration : Environnement & Outils
+## 6. Démonstration : Environnement & Outils
 
 <div class="sommaire-grid">
   <div class="dt-card" style="margin-top:0;">
@@ -310,7 +349,7 @@ style: |
 
 ---
 
-## 6. Conclusion
+## 7. Conclusion
 
 - **Objectifs atteints** : Plateforme BlassaCar fonctionnelle et responsive.
 - **Compétences** : Maîtrise du cycle Agile, Design Thinking et de la stack Full-stack Laravel.
