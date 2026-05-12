@@ -174,14 +174,6 @@ style: |
 
 ---
 
-## Méthodologie : Processus 2TUP
-
-<div class="img-container">
-  <img src="./images/2TUP.png" class="img-methodo" alt="2TUP">
-</div>
-
----
-
 ## 3. Branche Fonctionnelle : Design Thinking
 
 ### 1. EMPATHIE
